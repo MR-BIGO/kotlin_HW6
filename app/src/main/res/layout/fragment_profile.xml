@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentProfile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E1F5FE">
+
+        <ImageView
+            android:id="@+id/fragmentProfilePicture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/profile_page_icon_drawable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_person_foreground" />
+
+        <TextView
+            android:id="@+id/fragmentProfileNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Okr.Daviti"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toEndOf="@+id/fragmentProfilePicture"
+            app:layout_constraintTop_toTopOf="@+id/fragmentProfilePicture" />
+
+        <TextView
+            android:id="@+id/fragmentProfileSubscribersTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Subscribers"
+            app:layout_constraintStart_toStartOf="@+id/fragmentProfileNameTV"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentProfileNameTV" />
+
+
+        <TextView
+            android:id="@+id/fragmentProfileSubscriptionsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:text="Your Subscriptions"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragmentProfileSubscriptionsTV">
+
+            <ImageView
+                android:id="@+id/fragmentProfilesubsc1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/profile_page_icon_drawable"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_person_foreground" />
+
+            <ImageView
+                android:id="@+id/fragmentProfilesubsc2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/profile_page_icon_drawable"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_person_foreground" />
+
+            <ImageView
+                android:id="@+id/fragmentProfilesubsc3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/profile_page_icon_drawable"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_person_foreground" />
+
+            <ImageView
+                android:id="@+id/fragmentProfilesubsc4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/profile_page_icon_drawable"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_person_foreground" />
+
+            <ImageView
+                android:id="@+id/fragmentProfilesubsc5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/profile_page_icon_drawable"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_person_foreground" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

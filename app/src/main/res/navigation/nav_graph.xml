@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_add">
+    <fragment
+        android:id="@+id/fragment_add"
+        android:name="com.example.kotlin_navigation_app.FragmentAdd"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_add_to_action_videos"
+            app:destination="@id/fragment_videos" />
+        <action
+            android:id="@+id/action_fragment_add_to_fragment_profile"
+            app:destination="@id/fragment_profile" />
+        <action
+            android:id="@+id/action_fragment_add_to_fragment_app_details"
+            app:destination="@id/fragment_app_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_videos"
+        android:name="com.example.kotlin_navigation_app.FragmentVideos"
+        android:label="fragment_videos"
+        tools:layout="@layout/fragment_videos" >
+        <action
+            android:id="@+id/action_fragment_videos_to_fragment_profile"
+            app:destination="@id/fragment_profile" />
+        <action
+            android:id="@+id/action_fragment_videos_to_fragment_add"
+            app:destination="@id/fragment_add" />
+        <argument
+            android:name="video"
+            app:argType="com.example.kotlin_navigation_app.Video" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.example.kotlin_navigation_app.FragmentProfile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_fragment_profile_to_fragment_app_details"
+            app:destination="@id/fragment_app_details" />
+        <action
+            android:id="@+id/action_fragment_profile_to_fragment_add"
+            app:destination="@id/fragment_add" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_app_details"
+        android:name="com.example.kotlin_navigation_app.FragmentAppDetails"
+        android:label="fragment_app_details"
+        tools:layout="@layout/fragment_app_details" >
+        <action
+            android:id="@+id/action_fragment_app_details_to_fragment_add"
+            app:destination="@id/fragment_add" />
+    </fragment>
+</navigation>
